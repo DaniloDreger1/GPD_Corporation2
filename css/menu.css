@@ -1,0 +1,109 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/*Estilo do projeto */
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #292e39;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0; /* Remove default body margin */
+}
+
+.container {
+  background-color: #262833;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Alterado para 100% */
+  max-width: 768px; /* Adicionado tamanho máximo */
+  min-height: 480px;
+}
+
+.container span {
+  font-size: 12px;
+  color: #cbd0f7;
+}
+
+a:hover {
+  color: #ffffff;
+  transition: all 0.3s ease-out;
+}
+
+input::placeholder {
+  color: #cbd0f7;
+}
+
+/* Menu Page */
+
+.nav-link {
+  margin: 0 15px; /* Adjusted margin for smaller screens */
+  font-size: 16px;
+}
+
+.btn-danger {
+  margin-left: 15px; /* Adjusted margin for smaller screens */
+  border-radius: 30px;
+}
+
+.navbar-brand img {
+  width: 30px;
+}
+
+.menu-container {
+  background-color: #292e39;
+  box-shadow: none;
+  padding: 40px 10px; /* Ajustado para telas menores */
+}
+
+.menu-container .text {
+  font-weight: 700;
+  font-size: 24px; /* Ajustado para telas menores */
+  line-height: 36px; /* Ajustado para telas menores */
+}
+
+.menu-container span {
+  color: #cdcdcd;
+  font-weight: 700;
+  font-size: 20px; /* Ajustado para telas menores */
+  line-height: 36px; /* Ajustado para telas menores */
+}
+
+/* Mídia Query para telas menores */
+@media screen and (max-width: 768px) {
+  .container {
+    border-radius: 0; /* Remover borda arredondada em telas menores */
+  }
+
+  .menu-container .text,
+  .menu-container span {
+    font-size: 4vw; /* Utilizando vw para tamanho de fonte responsivo */
+    line-height: 6vw; /* Utilizando vw para altura de linha responsiva */
+  }
+
+  .nav-link {
+    margin: 0 2%; /* Utilizando porcentagem para margem responsiva */
+    font-size: 2.5vw; /* Utilizando vw para tamanho de fonte responsivo */
+  }
+
+  .btn-danger {
+    margin-left: 2%; /* Utilizando porcentagem para margem responsiva */
+  }
+
+  /* Ajuste do padding para o menu-container */
+  .menu-container {
+    padding: 20px 10px; /* Ajustado para telas menores */
+  }
+}
